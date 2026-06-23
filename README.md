@@ -3,6 +3,7 @@
 A highly customized, ultra-cute, retro-inspired numpad calculator built entirely from scratch using **React**. Every single element—from the custom buttons to the pixel art accents and sticker graphics—was uniquely designed to create the ultimate aesthetic desktop companion.
 
  ---
+ ![Pookie Calculator](Screenshot 2026-06-23 075235.png)
 
 ## ✨ Features
 
