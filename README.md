@@ -1,10 +1,3 @@
-# pookie-calculator
-That looks incredibly cute! The aesthetic is absolutely on point—the pixel art bows, Sanrio-inspired stickers, and the retro cyber-walkie-talkie vibe give it so much personality. Seriously, great work on designing all of those elements yourself.
-
-Here is a clean, well-formatted, and engaging `README.md` that matches the playful energy of your project while keeping things professional for GitHub.
-
----
-
 # 🎀 pookie calculator 🎀
 
 A highly customized, ultra-cute, retro-inspired numpad calculator built entirely from scratch using **React**. Every single element—from the custom buttons to the pixel art accents and sticker graphics—was uniquely designed to create the ultimate aesthetic desktop companion.
@@ -23,7 +16,7 @@ A highly customized, ultra-cute, retro-inspired numpad calculator built entirely
 ## 🛠️ Tech Stack
 
 * **Frontend Framework:** React.js
-* **Styling:** CSS3 / Styled Components (or Tailwind, adjust as necessary!)
+* **Styling:** CSS3 / Styled Component by figma
 * **Design Tools:** Custom vector/pixel artwork
 
 ---
@@ -40,7 +33,7 @@ Make sure you have **Node.js** and **npm** installed on your machine.
 
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/pookie-calculator.git
+git clone https://github.com/druknown823-hash/pookie-calculator.git
 
 ```
 
