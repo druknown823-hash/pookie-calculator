@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>React Basics</title>
+  </head>
+  <body>
+    <div class="js-container"></div>
+    <
+    <script src="https://unpkg.com/supersimpledev/react.js"></script>
+    <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+    <link rel="stylesheet" href="calc.css" >
+    <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+    <script type="text/babel">
+        function App (props){
+          let a,b,o = 0 ;
+          const [res, setRes] = React.useState("");
+          const clik = (value) =>{
+            setRes(res + value)
+          }
+
+          console.log(res)
+
+          const evaluate = () => {
+            const result = eval(res);
+            setRes(result.toString());
+          }
+
+
+          const clr = () => {
+            setRes("")
+          }
+
+
+          return (
+            <div className="page-container">
+              <div className="calc-container">
+                <div className="ghost"><p className="mc"/>.</div>
+                <div className="screen-container">
+                <div className="l1">
+                 <p className="dispaly-screen"></p>
+                </div>
+                <div className="secrete">
+                  <input 
+                    className="sereteBox"
+                    type = "text"
+                    value={res}
+                    dir="rtl"
+                    onChange={(event)=> setRes(event.target.value)}
+                    onKeyDown={(e)=>{
+                      if (e.key === "Enter"){
+                        evaluate()
+                     }
+                      if (e.key.toLowerCase() === "c"){
+                        e.preventDefault();
+                        clr()
+                      }
+                    }
+                  }
+                  width="200px"
+
+                  />
+                </div>
+                </div>
+                <div className="button-container">
+                <div className="col-1">
+                <div className="line">
+                  <button onClick={() => clik("1")}
+                    width="40px">
+                    <img 
+                      className="bttn" 
+                      src="calc_vectors\b-1.png"
+                      width= "40px"
+                    />
+                  </button>
+                  <button onClick={() => clik("2")}>
+                    <img 
+                      className="bttn"
+                      src="calc_vectors\b-2.png"
+                      width="40px" 
+                    />
+                  </button>
+                  <button onClick={() => clik("3")}>
+                    <img 
+                      className="bttn"
+                      src="calc_vectors\b-3.png"
+                      width="40px" 
+                    />
+                  </button>
+                  
+                </div>
+                <div className="line">
+                  <button onClick={() => clik("4")}>
+                    <img 
+                      className="bttn"
+                      src="calc_vectors\b-4.png" 
+                      width="40px"
+                    />
+                  </button>
+                  <button onClick={() => clik("5")}>
+                    <img 
+                      className="bttn"
+                      src="calc_vectors\b-5.png"
+                      width="40px" 
+                    />
+                  </button>
+                  <button onClick={() => clik("6")}>
+                    <img 
+                      className="bttn"
+                      src="calc_vectors\b-6.png"
+                      width="40px" 
+                    />
+                  </button>
+                  
+                </div>
+                <div className="line">
+                  <button onClick={() => clik("7")}>
+                    <img
+                      className="bttn"
+                      src="calc_vectors\b-7.png"
+                      width="40px" 
+                    />
+                  </button>
+                  <button onClick={() => clik("8")}>
+                    <img 
+                      className="bttn"
+                      src="calc_vectors\b-8.png"
+                      width="40px" 
+                    />
+                  </button>
+                  <button onClick={() => clik("9")}>
+                    <img 
+                      className="bttn"
+                      src="calc_vectors\b-9.png"
+                      width="40px" 
+                    />
+                  </button>
+                  
+                  
+                </div>
+                <div className="line">
+                  <button onClick={() => clik("0")}>
+                    <img 
+                      className="bttn"
+                      src="calc_vectors\b-0.png"
+                      width="40px" 
+                    />
+                  </button>
+                  <button onClick={() => clik("/")}>
+                    <img 
+                      className="bttn"
+                      src="calc_vectors\b-div.png"
+                      width="40px"
+                    />
+                  </button>
+                  <button onClick={() => clik("*")}>
+                    <img 
+                      className="bttn"
+                      src="calc_vectors\b-x.png"
+                      width="40px" 
+                    />
+                  </button>
+                  </div>                
+                <div className="line">
+                  <button onClick={() => clr()}
+                    className="clr-cont">
+                    <img 
+                      className="clr-bttn"
+                      src="calc_vectors\b-clr.png"
+                      width="160px"
+                    />
+                  </button>  
+                </div>
+                </div>
+                <div className="col-2">               
+                  <div className="ver-bttn">
+                    <button onClick={() => clik("+")}>
+                      <img 
+                        className="bttn-ver"
+                        src="calc_vectors\b-add-2.png"
+                        width="40px" 
+                      />
+                    </button>
+                  </div>
+                  <div className="ver-bttn">
+                    <button onClick={() => clik("-")}>
+                      <img 
+                        className="bttn-ver"
+                        src="calc_vectors\b-sub-2.png"
+                        width="40px"
+                      />
+                    </button>
+                  </div>
+                  <div className="ver-bttn">
+                    <button onClick={() => evaluate()}>
+                    <img 
+                      className="bttn"
+                      src="calc_vectors\b-eq.png"
+                      width="40px"
+                     />
+                  </button>
+                  </div>
+                </div>
+                  
+                </div>  
+
+
+              </div>
+              </div>
+
+
+            ); 
+      
+      }
+
+          
+          
+      const container = document.querySelector('.js-container'); 
+      ReactDOM.createRoot(container).render(<App />);
+    </script>
+  </body>
+</html>

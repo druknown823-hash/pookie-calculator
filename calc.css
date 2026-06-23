@@ -1,0 +1,97 @@
+button{
+  padding: 0%;
+  border: 0px;
+  height: 70px;
+}
+.bttn{
+  width:70px;
+}
+.clr-bttn{
+  height: 70px;
+  width: 210px;;
+}
+.line{
+  height: 70px;
+
+}
+.clr-cont{
+  height: 70px;
+}
+.page-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+
+}
+
+.display-screen{
+  height: auto;
+  width: 210px;
+  margin: 0px;
+  margin-top: 200px;
+  margin-bottom: 0px;
+  border-style: solid;
+  border-color: black;
+  
+
+}
+
+p{
+  margin: 0px;
+}
+.button-container{
+  display:flex;
+}
+.bttn-ver{
+  width:70px;
+}
+.ver-bttn{
+  height: 140px; ;
+}
+.sereteBox{
+  height: 100px;
+  width: 260px;
+  margin-bottom: 15px;
+  border: 0px;
+  padding: 0%;
+  color: #1e1e1e;
+  background: transparent;
+  font-size: 40px;
+  border-radius: 15px;
+  text-align: right;
+  font-family: "MyCustomFont";
+  font-weight: bold;
+}
+.sereteBox:focus {
+  outline: none;  
+}
+.ghost{
+  height: 200px;
+}
+.mc{
+  height: 115px;
+}
+/* .col-2{
+  display: flex;
+} */
+.calc-container {
+  width: 850px;;
+  height: 630px; /* The div needs height, or content inside it, to be visible */
+  background-image: url('calc_vectors/cal-main.png');
+  background-size:contain;       /* Scales the image to fill the div */
+  background-position: center;  /* Centers the image */
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+@font-face {
+  font-family: 'MyCustomFont'; /* The name you will use in your CSS */
+  src: url('calc_vectors/Calculator.ttf') format('truetype'); /* Fallback for older browsers */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Tells the browser to show a fallback font until this one loads */
+}
